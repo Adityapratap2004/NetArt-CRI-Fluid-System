@@ -1,13 +1,154 @@
 body {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 254, 254, 1) 19%,
+    rgba(241, 203, 30, 1) 71%
+  );
+  font-size: 16px;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*---------------------------- Header Css-------------------------------------------  */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 100px;
+}
+
+/*-----------------------------Hero Css-------------------------------------------- */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trophy img {
+  max-width: 30vw;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+}
+
+.award {
+  width: 60vw;
+}
+
+.award img {
+  max-width: 100%;
+}
+
+/*-----------------------------About Css-------------------------------------------- */
+
+.Aboutus {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Aboutus > p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.Aboutus img {
+  max-width: 80vw;
+}
+
+/*-----------------------------Footer Css-------------------------------------------- */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: calc(100% - 10px);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top {
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid red;
+}
+
+.footer-top h1 {
+  font-size: 1.5rem;
+}
+.footer-top span {
+  color: red;
+  font-weight: 800;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  background: red;
+  align-items: center;
+  color: white;
+}
+
+.footer-bottom img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.footer-bottom div {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    font-size: 12px;
+  }
+
+  .award h1 {
+    font-size: 1rem;
+  }
+
+  .trophy img {
+    height: 400px;
+  }
+
+  .award {
+    margin-bottom: 100px;
+  }
+  .award p {
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    text-align: center;
+  }
+
+  .footer-top h1 {
+    font-size: 1rem;
+  }
+
+  .footer-top p {
+    text-align: justify;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+
+  .footer-top {
+    border-top: 1px solid red;
+  }
 }
